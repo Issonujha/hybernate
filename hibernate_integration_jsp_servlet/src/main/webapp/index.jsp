@@ -7,11 +7,12 @@
 <title>Image Upload Form</title>
 </head>
 <body>
-
-<form action="ImageUpload" method="post" enctype="multipart/form-data">
+<form action="ImageUpload?action=filesUpload" method="post" enctype="multipart/form-data">
 	Select Images: <input type="file" name="files" multiple/> 
 	<input type="submit" value="upload" />
+	<h1 id="text"></h1>
 </form>
+<a href="${pageContext.servletContext.contextPath}/ImageUpload?action=viewFiles"> View Files </a>
 
 </body>
 </html>

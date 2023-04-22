@@ -25,6 +25,12 @@ public class Files {
 
 	public Files() {}
 
+	public Files(int id, String label, String caption) {
+		this.id = id;
+		this.label = label;
+		this.caption = caption;
+	}
+
 	public Files(String fileName) {
 		this.fileName = fileName;
 	}
@@ -60,5 +66,12 @@ public class Files {
 	public void setCaption(String caption) {
 		this.caption = caption;
 	}
+
+	@Override
+	public String toString() {
+		return "Files [id=" + id + ", fileName=" + fileName + ", label=" + label + ", caption=" + caption + "]";
+	}
+	
+	
 	
 }
